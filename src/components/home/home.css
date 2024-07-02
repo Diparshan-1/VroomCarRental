@@ -1,0 +1,164 @@
+.main {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 180px;
+    display: grid;
+    background-color: black;
+    max-width: 1200px;
+    /* min-width: 500px; */
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 40px;
+    margin: auto; /* Center horizontally */
+    color:yellow;
+}
+
+.searchMain {
+    /* min-width: 500px; */
+    max-width: 1150px;
+    margin-top: 230px;
+    
+}
+
+.search {
+    /* min-width: 500px; */
+    max-width: 1150px;
+    height: 80px;
+    background-color: orange;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    gap: 0.5vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input {
+    height: 60px;
+    flex: 1.2;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.pickup{
+    flex: 0.4;
+    display: inline-flex;
+    gap: 0.5vh;
+}
+.dropoff{
+    flex: 0.4;
+    display: inline-flex;
+    gap:0.5vh ;
+}
+.search_button{
+    flex: 0.2;
+}
+
+button {
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    width: 10vh;
+    max-height: 150px;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.calendarContainer {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: -200px;
+    z-index: 1000;
+    padding-right: 30%;
+}
+
+.guide {
+    background-color: white;
+    margin-top: 20px;
+    width: 100%;
+    background-color: red;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:700px){
+    .main{
+        background-color: blue;
+        /* margin: auto; */
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .searchMain{
+        width: 80vw;
+    }
+
+    .search{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        /* border-right: 10px solid yellow; */
+    }
+
+    .input{
+        flex:20%;
+        width: 80%;
+        /* height: 200px; */
+        margin-left: 0px;
+        
+        text-align: left;
+    }
+    .pickup{
+        flex: 15%;
+          
+    }
+    .pickup button{
+        width: 45vw;
+        
+    }
+    .dropoff{
+        flex: 15%;
+        width: fit-content;
+    }
+    .dropoff button{
+        width: 45vw;
+        
+    }
+    .search_button{
+        flex: 10%;
+        width: 100%;
+    }
+    
+}
